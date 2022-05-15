@@ -1,0 +1,46 @@
+title Product
+
+// User Personas
+anchor Customer [0.95, 0.5]
+
+// User Needs
+component Complete Profile [0.85, 0.2] label [-30, 10]
+component Search Content [0.85, 0.3] label [-40, 20]
+component Follow [0.85, 0.42] label [-20, 20]
+component See Feed [0.85, 0.5] label [-40, 20]
+component Reply to Post [0.85, 0.58] label [-40, 20]
+component Publish Post [0.85, 0.68] label [-40, 20]
+
+// Modules
+component UserProfile Module [0.6, 0.2] (build) label [-30, 25]
+component Search Engine [0.6, 0.3] (build)
+component Follow Module [0.4, 0.35] (build)
+
+// Systems
+component GetStream [0.3, 0.65] (buy)
+
+// Customer and Needs
+Customer->Complete Profile
+Customer->Search Content
+Customer->Follow
+Customer->See Feed
+Customer->Reply to Post
+Customer->Publish Post
+
+// Needs and Modules/Systems
+Complete Profile->UserProfile Module
+Search Content->Search Engine
+Follow->Follow Module
+Follow Module->GetStream
+See Feed->GetStream
+Publish Post->GetStream
+Reply to Post->GetStream
+
+// Core Domain
+pioneers [0.7, 0.15, 0.32, 0.4]
+
+note +users [0.95, 0.01]
+note +customer needs [0.85, 0.01]
+note +modules and systems [0.75, 0.01]
+
+note +SaaS product [0.29, 0.67]
