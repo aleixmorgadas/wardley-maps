@@ -36,6 +36,8 @@ See Feed->GetStream
 Publish Post->GetStream
 Reply to Post->GetStream
 UserProfile Module->Follow Module
+Search Engine->UserProfile Module
+Search Engine->Follow Module
 
 // Core Domain
 pioneers [0.7, 0.15, 0.32, 0.4]
